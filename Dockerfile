@@ -218,3 +218,12 @@ COPY ./php.ini /usr/local/etc/php/conf.d
 COPY ./php-fpm.conf /usr/local/etc/php-fpm.conf
 
 
+
+
+#laravel
+RUN useradd laravel -d /laravel
+RUN mkdir -p /etc/nginx/adminer/ /etc/nginx/ssl /laravel/.ssh /etc/nginx/sites-available /etc/nginx/sites-enabled
+
+
+
+
